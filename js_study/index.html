@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--suppress ALL -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Flower shop</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+
+</head>
+<body>
+
+
+<div class="header">
+    <div id="logo">
+        <a href="index.html">
+            <img src="img/logo.png" alt="Логотип"/>
+        </a>
+    </div>
+
+    <div id="top_menu">
+        <div id="inner_menu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#">Цветы</a></li>
+                <li><a href="#">Букеты</a></li>
+                <li><a href="#"><img src="img/cart.png" alt="Корзина"/></a></li>
+
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div id="slogan">
+        Подари радость букетом!
+    </div>
+
+    <div id="info">
+        Быстрая доставка в Перми со склада <br/>
+        Всегда свежие цветы <br/> по лучшим ценам!
+    </div>
+
+    <div id="arrow"><a href="#"><img src="img/arrow.png" alt="arrow"/></a></div>
+
+
+    <div class="clear"></div>
+</div>
+
+<div id="menu_wrapper">
+    <div id="menu_left">
+        <ul>
+
+            <li><label><input type="checkbox" value="roses" name="roses" id="roses"><span></span></label></li>
+            <li><label for="roses" class="labelCheck" id="roses_chk">Розы</label></li>
+
+
+            <li><label><input type="checkbox" value="orchids" name="orchids" id="orchids"><span></span></label></li>
+            <li><label for="orchids" class="labelCheck">Орхидеи</label></li>
+
+            <li><label><input type="checkbox" value="gerbera" name="gerbera" id="gerbera"><span></span></label></li>
+            <li><label for="gerbera" class="labelCheck">Герберы</label></li>
+
+            <li><label><input type="checkbox" value="bouquets" name="bouquets" id="bouquets"><span></span></label></li>
+            <li><label for="bouquets" class="labelCheck">Букеты</label></li>
+
+
+
+        </ul>
+    </div>
+
+        <div id="see_all">
+            <a href="#">
+                <img src="img/see_all.png" alt="Посмотреть все"/>
+            </a>
+        </div>
+    <div class="clear"></div>
+</div>
+
+<div class="products">
+    <div class="product_head">
+    <span>Розы</span>
+    </div>
+
+    <div class="line">
+        <div class="lines"></div>
+    </div>
+
+    <div class="clear"></div>
+    <div class="product_selected">
+
+
+        <form action="#" method="post">
+            <div class="select">
+            <select  name="roses[]">
+                <option selected disabled>количество</option>
+                <option value="1">1</option>
+                <option value="3">3</option>
+                <option value="5">5</option>
+                <option value="7">7</option>
+                <option value="9">9</option>
+                <option value="11">11</option>
+                <option value="15">15</option>
+                <option value="21">21</option>
+                <option value="25">25</option>
+                <option value="51">51</option>
+                <option value="101">101</option>
+            </select>
+            </div>
+            <!--<p><input type="submit" value="Отправить"></p>-->
+        </form>
+    </div>
+</div>
+
+<script>
+    document.getElementById("arrow").style = "margin-top: " + ($(document).height() - 540) + "px;";
+
+</script>
+
+
+</body>
+</html>
